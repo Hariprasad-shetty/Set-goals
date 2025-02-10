@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+  
+}
+body {
+    background-color: #E6FFEB;
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+main{
+  padding: 0 16px 32px;
+}
+.header{
+  text-align: center;
+  font-size: 64px;
+  color: #48A300;
+  
+}
+.header span{
+  color: #513232;
+}
+.container{
+    max-width: 600px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 32px 42px;
+    box-shadow: 0px 0px 8px 0pc rgba(0, 0, 0, 0.1);
+}
+.title{
+  font-size: 32px;
+}
+img{
+  vertical-align: middle;
+}
+
+.bar-label{
+  font-size: 14px;
+  color: #858585;
+  margin-bottom: 20px;
+  
+}
+.bar{
+  height: 30px;
+  background-color: rgba(72, 
+  163, 0, 0.07);
+  border-radius: 15px;
+}
+.bar-value{
+  height: 100%;
+  width: 0;
+  background-color: #48A300;
+  border-radius: 15px;
+  color: #EEFFE0;
+  font-weight: 500;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.2s ease-in-out;
+  
+}
+.bar-value span{
+  padding-left: 20px;
+  min-width: max-content;
+}
+.error{
+  font-size: 14px;
+  color: #FF5151;
+  margin-block: 20px;
+  visibility: hidden;
+  
+  
+}
+.goal-container{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  background-color: #FFFFFF;
+  margin-bottom: 42px;
+}
+.checkbox{
+  height: 24px;
+  width: 24px;
+  border: 2px solid rgba(97, 72, 28, 0.3);
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tick{
+  display: none;
+}
+.input-label{
+  padding-left: 22px;
+  border:none;
+  outline: none;
+  font-size: 16px;
+  font-family: inherit;
+  width: 100%;
+  align-self: stretch;
+  font-weight: 500;
+}
+.input-label::placeholder{
+  color: #D9D9D9;
+  
+}
+.quote{
+  text-align: center;
+  font-weight: 500;
+}
+.made{
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 64px;
+}
+.completed .checkbox{
+  border-color: #48A300;
+  background: #48A300;
+}
+.completed .tick{
+  display: block;
+}
+.completed .input-label{
+  color: #48A300;
+  text-decoration-line: line-through;
+}
+
+@media (max-width: 760px){
+  
+  .header{
+    font-size: 32px;
+    
+  }
+  .container{
+    padding: 16px 32px;
+    
+  }
+  .goal-container{
+    height: 64px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+  }
+  .checkbox{
+    height: 20px;
+    width: 20px;
+  }
+  .made{
+    margin-top: 32px;
+  }
+  .bar{
+    height: 24px;
+  }
+}
